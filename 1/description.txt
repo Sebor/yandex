@@ -1,0 +1,37 @@
+
+Изменить имя хоста и домена в hosts
+Ограничение времени 	1 секунда
+Ограничение памяти 	64Mb
+Ввод
+стандартный ввод
+Вывод
+стандартный вывод
+Легенда
+
+В текстовом (ASCII, unix) файле hosts задается соответствие имён и адресов.
+В подаваемом программе на стандартный вход файле имя машины bar нужно изменить на baz, а ее имя домена domain.tld нужно заменить на donemain.tld
+Результат вывести на стандартный вывод
+Формат ввода
+
+127.0.0.1       localhost
+192.168.1.10    foo.mydomain.org       foo
+192.168.1.13    bar.domain.tld      bar.anotherdomain.tld  bar
+213.180.204.62    yandex.com      www.yandex.com
+# The following lines are desirable for IPv6 capable hosts
+::1     ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+Формат вывода
+
+127.0.0.1       localhost
+192.168.1.10    foo.mydomain.org       foo
+192.168.1.13    baz.donemain.tld      baz.anotherdomain.tld  baz
+213.180.204.62    yandex.com      www.yandex.com
+# The following lines are desirable for IPv6 capable hosts
+::1     ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
