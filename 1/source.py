@@ -1,6 +1,6 @@
 __author__ = 'Sebor'
-import re
 def Hosts(file):
+    import re
     try:
         pattern1 = re.compile(r'\bbar\b')
         pattern2 = re.compile(r'\bbar.domain\b')
